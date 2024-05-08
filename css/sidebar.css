@@ -10,3 +10,7 @@
     background-color: rgb(255, 0, 0);
     border-radius: 20px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
