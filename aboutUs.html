@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background: #191c29;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        header {
+            background: url(https://assets.nflxext.com/ffe/siteui/vlv3/c1366fb4-3292-4428-9639-b73f25539794/2fb0c52e-8510-456d-8e09-cb83b3f5b1df/EG-en-20240408-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 85% 85% / 30%;
+        }
+
+        header .overlay {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            color: #FFF;
+            text-shadow: 1px 1px 1px #333;
+            background-image: linear-gradient(135deg, #00000069 10%, #00000052 100%);
+
+        }
+
+
+        .overlay h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 12.5rem;
+            font-weight: 210;
+            font-style: normal;
+            letter-spacing: 0.25rem;
+            cursor: context-menu;
+        }
+
+        .overlay p {
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 2.5rem;
+            font-size: 0.938rem;
+            margin-top: -3rem;
+            font-weight: 700;
+            cursor: context-menu;
+        }
+
+
+
+
+        .overlay a {
+            text-decoration: none;
+            color: #ffffffc9;
+            font-size: 1rem;
+            margin: 1.5rem;
+            margin-bottom: 0px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            transition: 0.2s ease-in-out;
+        }
+
+        .overlay a:hover {
+            text-decoration: none;
+            text-shadow: 1px 1px 10px #ffffff, 1px 1px 10px #ccc;
+        }
+
+
+
+        .container {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            padding: 30px;
+            align-self: start;
+        }
+
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background-color: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+
+        .container .card:hover {
+            height: 320px;
+            /* filter: grayscale(1); */
+        }
+
+
+        .container .card .image {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            margin-right: 10px;
+            top: -40%;
+            left: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .container .card .image img {
+            max-width: 100%;
+            border-radius: 15px;
+
+        }
+
+
+
+        .container .card .content {
+            position: relative;
+            top: -140px;
+            padding: 10px 15px;
+            color: #111;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .content {
+            font-family: "Bebas Neue", sans-serif;
+            letter-spacing: 2px;
+
+        }
+
+        .content p {
+            font-family: "Bebas Neue", sans-serif;
+            letter-spacing: 2px;
+            color: #6c6c6c;
+            font-size: 1.4rem;
+        }
+
+        .content a {
+            text-decoration: none;
+        }
+
+        .content h3 {
+            font-size: 1.6em;
+        }
+
+        .container .card:hover .content {
+            margin-top: 30px;
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.2s;
+        }
+
+        .team {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .content p i {
+            color: rgb(0, 55, 255);
+        }
+
+        content {
+            width: 100%;
+            min-height: fit-content;
+            max-height: fit-content;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="overlay">
+            <content>
+                <h1>clack<span style="color:rgb(255, 0, 0);  text-shadow: rgb(255, 255, 255) 0px 0px 20px;">it</span>
+                </h1>
+            </content>
+            <content>
+                <p>WEBSITE FOR MOVIES, SERIES, TV SHOWS, ETC...</p>
+            </content>
+            <content>
+                <a href="mainPage.html">HOME</a>
+                <a href="mainPage.html#movies">MOVIES</a>
+                <a href="mainPage.html#ar-movies">ARABIC SECTION</a>
+                <a href="mainPage.html#SERIES">SERIES</a>
+                <a href="mainPage.html#TvShows">ANIMATION</a>
+                <a href="mailto:aliabdoub2809@gmail.com" title="for problems you faced in the website">CONTACT</a>
+                <a href="aboutUs.html" title="information about the team members"
+                    style="font-size: 19px ; color: #ffffff; text-shadow:1px 1px 10px #ffffff, 1px 1px 10px #ccc;">ABOUT</a>
+            </content>
+        </div>
+    </header>
+    <div class="team">
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/Omar Raafat.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Omar Raafat</h3>
+                    <p><a href="" target="_blank"><i class="fa-brands fa-discourse"></i></a> &nbsp;outlook
+                    </p>
+                    <p>Id &nbsp;&nbsp;2202757</p>
+                    <p style="color: #000000;">description designing</p>
+                </div>
+            </div>
+        </div>
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/Mariem.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Mariem Basha</h3>
+                    <a href="mailto:2202751@student.eelu.edu.eg" target="_blank">
+                        <p><i class="fa-brands fa-discourse"></i> &nbsp;outlook
+                        </p>
+                    </a>
+                    <p>Id &nbsp;&nbsp;2202751</p>
+                    <p style="color: #000000;">description designing</p>
+                </div>
+            </div>
+        </div>
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/sam2.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Samya Ahmed</h3>
+                    <p><a href="mailto:2202910@student.eelu.edu.eg" target="_blank"><i
+                                class="fa-brands fa-discourse"></i></a> &nbsp;outlook
+                    </p>
+                    <p>Id &nbsp;&nbsp;2202910</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="" src="image/nermeen.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Nermeen Raafat</h3>
+
+                    <p><a href="mailto:2202915@student.eelu.edu.eg" target="_blank"><i
+                                class="fa-brands fa-discourse"></i></a> &nbsp;outlook
+                    </p>
+                    <p>Id &nbsp;&nbsp;2202915</p>
+                </div>
+            </div>
+        </div>
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/Manar Tarek.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Manar Tarek</h3>
+
+                    <p><a href="mailto:2102313@student.eelu.edu.eg" target="_blank"><i
+                                class="fa-brands fa-discourse"></i></a> &nbsp;outlook
+                    </p>
+                    <p>Id &nbsp;&nbsp; 2102313</p>
+                    <p style="color: #000000;">hyperlinks</p>
+                </div>
+            </div>
+        </div>
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/Yasmeen Khaled2.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Yasmeen Khaled</h3>
+                    <a href="mailto:2202759@student.eelu.edu.eg" target="_blank">
+                        <p><i class="fa-brands fa-discourse"></i> &nbsp;outlook
+                        </p>
+                    </a>
+                    <p>Id &nbsp;&nbsp;2202759</p>
+                    <p style="color: #000000;">hyperlinks</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=container>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="image/abdulrahman.avif" alt="not-found">
+                </div>
+                <div class=content>
+                    <h3>Abdulrahman Bassem</h3>
+
+                    <a href="mailto:2202757@student.eelu.edu.eg" target="_blank">
+                        <p><i class="fa-brands fa-discourse"></i> &nbsp;outlook
+                        </p>
+                    </a>
+                    <p>Id &nbsp;&nbsp;2202757</p>
+                    <p style="color: #000000;">team leader</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-section-about">
+                <a href="mainPage.html">
+                    <h1>clack<span style="color:rgb(255, 0, 0); font-size: 5rem;">it</span>
+                    </h1>
+                </a>
+                <br>
+
+                <a href="mailto:aliabdoub28099@gmail.com?subject=I have a question about">
+                    <p>Any questions? Contact Us</p>
+                </a>
+            </div>
+            <br>
+
+            <div class="footer-section-links">
+                <a href="https://facebook.com/" target="_blank" title="Facebook" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://github.com/Abdulrhman2809/clackIT" target="_blank" title="Git Hub"
+                    aria-label="Git Hub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="www.linkedin.com/in/abdulrahman-abdelalim-45bb1b289" target="_blank" title="LinkedIn"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p> © 2024 <span>Clackit</span>. “All Rights Reserved”</p>
+        </div>
+    </footer>
+</body>
+
+</html>

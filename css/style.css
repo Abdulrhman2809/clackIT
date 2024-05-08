@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --card-height: 23.125rem;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background: #191c29;
+    overflow-x: hidden;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url(../image/header-cover.jpg);
+    text-align: center;
+    width: 100%;
+    min-height: fit-content;
+    max-height: fit-content;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 3.125rem;
+    color: #FFF;
+    text-shadow: 0.063rem 0.063rem 0.063rem #333;
+    background-image: linear-gradient(135deg, #00000069 10%, #00000052 100%);
+
+}
+
+.overlay h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 12.5rem;
+    font-weight: 210;
+    font-style: normal;
+    letter-spacing: 0.25rem;
+    cursor: context-menu;
+}
+
+.overlay p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2.5rem;
+    font-size: 0.938rem;
+    margin-top: -3rem;
+    font-weight: 700;
+    cursor: context-menu;
+}
+
+
+.overlay a {
+    text-decoration: none;
+    color: #ffffffc9;
+    font-size: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+
+.overlay a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 10px #ffffff, 1px 1px 10px #ccc;
+}
+
+
+
+
+.con {
+    width: 100%;
+    min-height: fit-content;
+    max-height: fit-content;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #191c29;
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 2.25rem;
+    perspective: 156.25rem;
+    margin: 1.9rem;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+.wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.wrapper img {
+    width: 270;
+    height: 25rem;
+    border-radius: 0.625rem;
+}
+
+
+
+.card:hover .wrapper {
+    transform: perspective(56.25rem) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
+}
+
+
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 5rem;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.wrapper::after {
+    bottom: 0;
+    opacity: 1;
+
+    background-image: linear-gradient(to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+    opacity: 1;
+}
+
+
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.card:hover .title {
+    transform: translate3d(0%, -3.125rem, 6.25rem);
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 6.25rem);
+}
+
+.movies {
+    position: relative;
+
+    width: 16.5rem;
+    height: 24.375rem;
+    margin: 0.5rem;
+
+}
+
+.mov-desc {
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 100%;
+    padding: 0.625rem;
+    position: absolute;
+    top: 44.9%;
+    background-color: #000000cb;
+    border-radius: 0.625rem;
+    overflow-y: hidden;
+    min-height: 18.313rem;
+    max-height: 18.313rem;
+    visibility: hidden;
+    transition: 0.4s ease-in;
+
+
+}
+
+.mov-desc h3 {
+    margin-top: 0.625rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.15rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+}
+
+
+
+.mov-desc p span {
+    border-bottom-style: solid;
+    border-color: red;
+    text-align: left;
+
+}
+
+.star {
+    color: yellow;
+    border: 0rem;
+
+}
+
+.mov-desc p {
+    margin-bottom: 0.75rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+}
+
+.movies:hover .mov-desc {
+    transform: translate3d(0%, -26.4%, 6.25rem);
+    visibility: visible;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.mov-img img {
+    width: 100%;
+    height: 24.375rem;
+    object-fit: cover;
+    border-radius: 0.625rem;
+
+}
+
+.category {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 5.625rem;
+    font-weight: 210;
+    font-style: normal;
+    letter-spacing: 0.25rem;
+    transition: 0.3s ease-in-out;
+    cursor: context-menu;
+}
+
+.category:hover {
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.ar-mov p {
+    width: fit-content;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 210;
+    font-style: normal;
+    letter-spacing: 0.25rem;
+    transition: 0.3s ease-in-out;
+    cursor: context-menu;
+
+}
+
+.ar-mov p:hover {
+    text-shadow: rgb(255, 0, 0) 1px 0 12px;
+}
+
+.buttons {
+    text-align: right;
+    margin-bottom: -1.563rem;
+}
+
+content {
+    width: 100%;
+    min-height: fit-content;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

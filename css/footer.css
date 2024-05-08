@@ -1,0 +1,83 @@
+footer {
+    background: #ffffff;
+    padding: 20px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-section-about a {
+    text-decoration: none;
+}
+
+.footer-section-about h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    font-weight: 210;
+    font-style: normal;
+    color: #191c29;
+    display: inline;
+    text-decoration: none;
+    transition: 0.3s
+}
+
+.footer-section-about h1:hover {
+    text-shadow: rgba(0, 0, 0, 0.553) 0px 0 9px;
+
+}
+
+.footer-content {
+    text-decoration: none;
+}
+
+
+.footer-section-about a p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.9rem;
+    font-weight: 210;
+    font-style: normal;
+    color: #191c29;
+    margin-top: -1rem;
+    display: inline;
+    text-decoration: none;
+}
+
+
+.footer-section-links a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #191c29;
+    margin: 0rem 1rem;
+}
+
+.footer-section-links a .fa-facebook:hover {
+    color: #03109e;
+    text-decoration: none;
+}
+
+.footer-section-links a .fa-github:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section-links a .fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.footer-section-links a .fa-linkedin:hover {
+    color: #2936C4;
+}
+
+.footer-content p {
+    margin-top: 1rem;
+}
+
+.footer-content span {
+    font-size: 1.3rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.1rem;
+}
