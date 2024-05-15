@@ -13,7 +13,6 @@ body {
     align-items: center;
     background: #191c29;
     overflow-x: hidden;
-
 }
 
 * {
@@ -30,9 +29,8 @@ header {
     max-height: fit-content;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
     overflow: hidden;
-    border-radius: 0 0 85% 85% / 30%;
+    border-radius: 0 0 85% 85% /30%;
 }
 
 header .overlay {
@@ -42,14 +40,12 @@ header .overlay {
     color: #FFF;
     text-shadow: 0.063rem 0.063rem 0.063rem #333;
     background-image: linear-gradient(135deg, #00000069 10%, #00000052 100%);
-
 }
 
 .overlay h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 12.5rem;
     font-weight: 210;
-    font-style: normal;
     letter-spacing: 0.25rem;
     cursor: context-menu;
 }
@@ -63,7 +59,6 @@ header .overlay {
     cursor: context-menu;
 }
 
-
 .overlay a {
     text-decoration: none;
     color: #ffffffc9;
@@ -72,16 +67,13 @@ header .overlay {
     margin-bottom: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease;
+    text-decoration: none;
 }
 
 .overlay a:hover {
-    text-decoration: none;
     text-shadow: 1px 1px 10px #ffffff, 1px 1px 10px #ccc;
 }
-
-
-
 
 .con {
     width: 100%;
@@ -121,24 +113,19 @@ header .overlay {
     z-index: -1;
 }
 
-
-
 .wrapper img {
     width: 270;
     height: 25rem;
     border-radius: 0.625rem;
 }
 
-
-
 .card:hover .wrapper {
     transform: perspective(56.25rem) translateY(-5%) rotateX(25deg) translateZ(0);
     box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0.125rem 2.188rem 2rem -0.5rem rgba(0, 0, 0, 0.75);
 }
-
-
 
 .wrapper::before,
 .wrapper::after {
@@ -150,8 +137,6 @@ header .overlay {
     position: absolute;
     left: 0;
 }
-
-
 
 .wrapper::before {
     top: 0;
@@ -165,7 +150,6 @@ header .overlay {
 .wrapper::after {
     bottom: 0;
     opacity: 1;
-
     background-image: linear-gradient(to bottom,
             transparent 46%,
             rgba(12, 13, 19, 0.5) 68%,
@@ -176,7 +160,6 @@ header .overlay {
 .wrapper::after {
     opacity: 1;
 }
-
 
 .title {
     width: 100%;
@@ -202,7 +185,6 @@ header .overlay {
 
 .movies {
     position: relative;
-
     width: 16.5rem;
     height: 24.375rem;
     margin: 0.5rem;
@@ -210,7 +192,6 @@ header .overlay {
 }
 
 .mov-desc {
-    opacity: 1;
     font-family: 'Open Sans', sans-serif;
     color: white;
     width: 100%;
@@ -244,13 +225,11 @@ header .overlay {
     border-bottom-style: solid;
     border-color: red;
     text-align: left;
-
 }
 
 .star {
     color: yellow;
     border: 0rem;
-
 }
 
 .mov-desc p {
@@ -268,13 +247,11 @@ a {
     text-decoration: none;
 }
 
-
 .mov-img img {
     width: 100%;
     height: 24.375rem;
     object-fit: cover;
     border-radius: 0.625rem;
-
 }
 
 .category {
