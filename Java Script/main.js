@@ -1,3 +1,4 @@
+console.log("احلي بروجكت في الدنيا")
 let mybutton = document.getElementById("myBtn");
 function topFunction() {
     document.body.scrollTop = 0;
