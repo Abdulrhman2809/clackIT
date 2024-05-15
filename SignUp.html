@@ -3,7 +3,7 @@
 
 <head>
     <title>Signup</title>
-    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="icon" href="image/icon.png">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/sidebar.css">
@@ -22,6 +22,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
             line-height: 1.7;
+            height: 100vh;
             color: #ffffff;
             background: #ffffff;
         }
@@ -29,7 +30,6 @@
         * {
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
         }
 
         header {
@@ -51,6 +51,7 @@
             color: #FFF;
             text-shadow: 1px 1px 1px #333;
             background-image: linear-gradient(135deg, #00000069 10%, #00000052 100%);
+            /*just for making background darker*/
 
         }
 
@@ -58,7 +59,6 @@
             font-family: "Bebas Neue", sans-serif;
             font-size: 12.5rem;
             font-weight: 210;
-            font-style: normal;
             letter-spacing: 0.25rem;
             cursor: context-menu;
         }
@@ -70,17 +70,6 @@
             margin-top: -3rem;
             font-weight: 700;
             cursor: context-menu;
-        }
-
-
-
-
-        .slogan {
-            font-family: 'Open Sans', sans-serif;
-            margin-bottom: 40px;
-
-            font-size: 15px;
-            margin-top: -48px;
         }
 
         .overlay a {
@@ -98,8 +87,6 @@
             text-decoration: none;
             text-shadow: 1px 1px 10px #ffffff, 1px 1px 10px #ccc;
         }
-
-
 
         .link {
             color: #ffffff;
@@ -129,39 +116,22 @@
             text-shadow: #ffffff;
         }
 
-        .btn {
-            border-radius: 4px;
-            height: 44px;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            -webkit-transition: all 200ms linear;
-            transition: all 200ms linear;
-            padding: 0 30px;
-            letter-spacing: 1px;
-            display: -webkit-inline-flex;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            align-items: center;
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        .btn:hover {
-            background-color: #000000;
-            color: #ffeba7;
-            box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
-        }
-
         content {
             width: 100%;
             min-height: fit-content;
             max-height: fit-content;
             margin: auto;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+        }
+
+        .footer-section-links a {
+            text-decoration: none;
+        }
+
+        .footer-section-about a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -192,15 +162,10 @@
             </content>
         </div>
     </header>
-    <br>
-    <br><br>
-
-    <br><br>
-    <br><br>
-
+    <br><br><br><br><br><br><br>
+    <script src="Java Script/main.js"></script>
     <form class="main-form" id="login" onsubmit="return validateForm1()">
         <label class="label-login">Signup</label>
-
         <div class="input-container">
             <input type="text" required id="username" />
             <label>Username</label>
@@ -219,48 +184,35 @@
         </div>
         <button class="login-button" type="button" id="signupButton" onclick="signUp()">Signup</button>
     </form>
-
-    <script src="Java Script/main.js"></script>
-
-
-
     <br><br><br>
     <footer>
         <div class="footer-content">
-
             <div class="footer-section-about">
                 <a href="mainPage.html">
                     <h1>clack<span style="color:rgb(255, 0, 0); font-size: 5rem;">it</span>
                     </h1>
                 </a>
                 <br>
-
                 <a href="mailto:aliabdoub28099@gmail.com?subject=I have a question about">
                     <p>Any questions? Contact Us</p>
                 </a>
             </div>
-            <br>
-
             <div class="footer-section-links">
-                <a href="https://facebook.com/" target="_blank" title="Facebook" aria-label="Facebook">
+                <a href="https://facebook.com/" target="_blank" title="Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-
-                <a href="https://github.com/Abdulrhman2809/clackIT" target="_blank" title="Git Hub"
-                    aria-label="Git Hub">
+                <a href="https://github.com/Abdulrhman2809/clackIT" target="_blank" title="Git Hub">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="https://instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+                <a href="https://instagram.com/" target="_blank" title="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="www.linkedin.com/in/abdulrahman-abdelalim-45bb1b289" target="_blank" title="LinkedIn"
-                    aria-label="LinkedIn">
+                <a href="www.linkedin.com/in/abdulrahman-abdelalim-45bb1b289" target="_blank" title="LinkedIn">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p> © 2024 <span>Clackit</span>. “All Rights Reserved”</p>
         </div>
     </footer>
 </body>
