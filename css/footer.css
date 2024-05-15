@@ -3,7 +3,6 @@ footer {
     padding: 20px 0px;
     font-family: 'Play', sans-serif;
     text-align: center;
-    text-decoration: none;
 }
 
 .footer-section-about a {
@@ -18,18 +17,12 @@ footer {
     color: #191c29;
     display: inline;
     text-decoration: none;
-    transition: 0.3s
+    transition: 0.3s ease-in-out;
 }
 
 .footer-section-about h1:hover {
     text-shadow: rgba(0, 0, 0, 0.553) 0px 0 9px;
-
 }
-
-.footer-content {
-    text-decoration: none;
-}
-
 
 .footer-section-about a p {
     font-family: "Bebas Neue", sans-serif;
@@ -39,9 +32,7 @@ footer {
     color: #191c29;
     margin-top: -1rem;
     display: inline;
-    text-decoration: none;
 }
-
 
 .footer-section-links a {
     text-decoration: none;
@@ -50,22 +41,31 @@ footer {
     margin: 0rem 1rem;
 }
 
+.footer-section-links a .fa-facebook {
+    transition: 0.3s ease-in-out;
+}
+
 .footer-section-links a .fa-facebook:hover {
     color: #03109e;
-    text-decoration: none;
+}
+
+.footer-section-links a .fa-github {
+    transition: 0.3s ease-in-out;
 }
 
 .footer-section-links a .fa-github:hover {
     color: #000000;
-    text-decoration: none;
 }
 
 .footer-section-links a .fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: none;
+
+}
+
+.footer-section-links a .fa-linkedin {
+    transition: 0.3s ease-in-out;
 }
 
 .footer-section-links a .fa-linkedin:hover {
